@@ -11,10 +11,10 @@ if __name__ == "__main__":
     parser.add_argument("--num_layers", type=int, default=2)
     parser.add_argument("--dim_model", type=int, default=64)
     parser.add_argument("--num_heads", type=int, default=4)
-    parser.add_argument("--batch_size", type=int, default=256)
+    parser.add_argument("--batch_size", type=int, default=512)
     parser.add_argument("--learning_rate", type=float, default=2e-4)
-    parser.add_argument("--weight_decay", type=float, default=0.4)
-    parser.add_argument("--num_steps", type=int, default=1e4)
+    parser.add_argument("--weight_decay", type=float, default=0.2)
+    parser.add_argument("--num_steps", type=int, default=2e4)
     parser.add_argument("--device", type=str, default="cpu")
     args = parser.parse_args()
 
